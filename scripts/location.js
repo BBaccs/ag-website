@@ -212,7 +212,7 @@ function buildDeliveryPopup(button) {
     if (hasDoorDash) {
         var getDoorDashContent = '<a class="d-block" aria-label="Order from Doordash"' +
             'href="___doordashURL___" target="_blank">' +
-            '<img class="door-dash-logo" src="../../assets/other/doorDashLogoSmall.jpg"' +
+            '<img class="door-dash-logo" src="./../assets/other/doorDashLogoSmall.jpg"' +
             '   alt="" /> </a>';
         getDoorDashContent = getDoorDashContent.replace('___doordashURL___', selectedLocation.Delivery.DoorDashURL);
         $('#doordash-div').html(getDoorDashContent);
@@ -231,7 +231,7 @@ function buildDeliveryPopup(button) {
     if (hasUberEats) {
         var getDoorDashContent = '<a class="d-block" aria-label="Order from Uber Eats"' +
             'href="___ubereatsURL___" target="_blank">' +
-            '<img src="../../assets/other/uberEatsLogoSmall.png" alt="" /></a>';
+            '<img src="./../assets/other/uberEatsLogoSmall.png" alt="" /></a>';
         getDoorDashContent = getDoorDashContent.replace('___ubereatsURL___', selectedLocation.Delivery.UberEatsURL);
         $('#uber-eats-div').html(getDoorDashContent);
     }
